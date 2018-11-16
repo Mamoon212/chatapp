@@ -70,7 +70,6 @@
                 e.preventDefault();
                 var messageTextBox= jQuery('[name=message]');
                 socket.emit("createMessage", {
-                    from: "user",
                     text: messageTextBox.val()
                 }, function(){
                     messageTextBox.val('')
